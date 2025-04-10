@@ -40,7 +40,7 @@ def doar():
             VALUES ("{titulo}", "{categoria}", "{autor}", "{image_url}")
         """)
 
-        conn.commit()
+        conn.commit ()
 
         return jsonify({"mensagem":"Livro cadastrado com sucesso"}), 201
 
